@@ -464,6 +464,9 @@ if test_data is not None:
 
     st.markdown("###")
 
+    # Add explanation
+    st.markdown(ui_text.RISK_CLASSIFICATION_EXPLANATION)
+
     # SHAP Explanation for this customer
     if shap_data is not None and shap_data.get('explainer') is not None:
         st.markdown(f"**{ui_text.SHAP_EXPLANATION_HEADER}**")

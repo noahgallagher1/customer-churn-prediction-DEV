@@ -10,70 +10,82 @@ easier to maintain consistent tone and messaging.
 # PAGE TITLE & OVERVIEW
 # =============================================================================
 
-PAGE_TITLE = "Customer Churn Prediction Dashboard"
+PAGE_TITLE = "📉 Customer Churn Prediction Dashboard"
 
 PAGE_OVERVIEW = """
-This dashboard helps identify customers at high risk of churn, understand *why*,
-and guide data-driven retention strategy.
+This dashboard combines machine learning, explainability methods, and business reasoning to
+identify customers at risk of churn **and understand why**.
+
+The goal is not only to predict churn — but to support **clear, targeted retention strategy**.
+
+**Use this interface to:**
+- Explore patterns behind churn behavior
+- Understand which customer attributes drive churn risk
+- Evaluate individual churn scores with personalized explanations
+- Design actionable retention programs grounded in data insight
 """
 
 # =============================================================================
 # SECTION 1: BUSINESS CONTEXT
 # =============================================================================
 
-BUSINESS_CONTEXT_TITLE = "💡 Project Summary — Click to Expand"
+BUSINESS_CONTEXT_TITLE = "💡 Why This Matters"
 
 BUSINESS_CONTEXT_CONTENT = """
-Customer churn significantly impacts recurring revenue and growth stability.
-This model predicts which customers are most likely to churn and highlights the
-key behavioral and account factors driving that risk.
+Customers who churn represent **lost recurring revenue**, and acquiring new customers is far more
+expensive than retaining existing ones. This model helps identify *which customers are at risk* so
+retention teams can act **before** churn happens.
 
-**Key Objectives**
-- Identify high-risk customers
-- Understand churn drivers at the feature level
-- Support targeted retention strategies
+The dashboard also highlights **why** churn occurs — enabling strategy, not just prediction.
 """
 
 # =============================================================================
 # SECTION 2: CHURN DRIVER INSIGHTS (SHAP)
 # =============================================================================
 
-CHURN_DRIVERS_TITLE = "🔍 Key Factors Driving Churn"
+CHURN_DRIVERS_TITLE = "🔍 What Drives Customer Churn?"
 
 CHURN_DRIVERS_INTRO = """
-These feature importance results explain what the model is learning and why
-certain customers churn.
+This analysis shows which factors the model relies on most when predicting churn.
+These **do not imply causation**, but they highlight meaningful behavioral patterns.
 """
 
 CHURN_DRIVERS_INSIGHTS = """
-**Key Takeaways from Feature Analysis:**
-- **Month-to-month contracts** correlate heavily with churn
-- **Low tenure customers** are at highest risk early in lifecycle
-- **Electronic check payment** is a significant churn indicator
-- **Higher monthly charges** increase churn likelihood
-- **Lack of online security** services correlates with higher churn risk
+**Key Patterns Identified:**
+
+- **Month-to-month contracts** are strongly linked to churn — commitment level matters.
+
+- Customers with **low tenure** often leave before loyalty habits form.
+
+- **Electronic check payment** correlates with churn, possibly signaling lower perceived trust or friction.
+
+- **Higher monthly charges** increase churn risk when value is not clearly communicated.
+
+- Customers **without online security or tech support** experience frustration and reduced stickiness.
 """
 
 # =============================================================================
 # SECTION 3: CHURN SEGMENTATION
 # =============================================================================
 
-CHURN_SEGMENTATION_TITLE = "🧩 Churn Segmentation by Customer Attributes"
+CHURN_SEGMENTATION_TITLE = "🧩 Churn Patterns Across Customer Segments"
 
 CHURN_SEGMENTATION_INTRO = """
-This view highlights how churn varies across different customer segments.
-Use this to identify groups where targeted interventions will be most effective.
+Churn is **not evenly distributed**. Certain customer groups churn at much higher rates.
+Use these visuals to identify **where retention budget should be focused**.
 """
 
 # =============================================================================
 # SECTION 4: CUSTOMER RISK LOOKUP
 # =============================================================================
 
-CUSTOMER_RISK_TITLE = "🎯 Customer-Specific Churn Risk"
+CUSTOMER_RISK_TITLE = "🎯 Individual Customer Churn Risk"
 
 CUSTOMER_RISK_INTRO = """
-Enter a customer ID to see personalized churn risk and explanation.
-This helps support teams tailor retention strategies at the individual level.
+Search for a customer to see:
+- Their predicted churn risk
+- The **top reasons** behind the risk score
+- Suggested retention approach tailored to their situation
 """
 
 # Risk level labels
@@ -86,15 +98,20 @@ RISK_HIGH_DESC = "Urgent intervention recommended"
 RISK_MEDIUM_DESC = "Proactive engagement needed"
 RISK_LOW_DESC = "Standard service approach"
 
+# Explanation text for risk classification
+RISK_CLASSIFICATION_EXPLANATION = """
+_This classification reflects how similar the customer is to past churners in key behaviors and account characteristics._
+"""
+
 # =============================================================================
 # SECTION 5: RETENTION STRATEGY RECOMMENDATIONS
 # =============================================================================
 
-RETENTION_STRATEGY_TITLE = "✅ Recommended Retention Strategies"
+RETENTION_STRATEGY_TITLE = "✅ Turning Insight into Action"
 
 RETENTION_STRATEGY_INTRO = """
-Use these data-driven recommendations to design targeted retention campaigns
-based on the key churn drivers identified by the model.
+Retention strategy should be aligned with **why** a customer is at risk.
+The table below converts churn drivers into **targeted action recommendations**.
 """
 
 RETENTION_STRATEGY_TABLE = """
